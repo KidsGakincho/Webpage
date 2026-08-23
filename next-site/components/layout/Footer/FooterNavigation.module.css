@@ -1,0 +1,33 @@
+.list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+
+  color: #aaa;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.link:hover {
+  color: #fff;
+
+  transform: translateX(4px);
+}

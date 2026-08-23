@@ -1,0 +1,180 @@
+.section {
+  padding-block: 120px;
+
+  background: #fff;
+}
+
+.container {
+  width: min(
+    calc(100% - 48px),
+    1200px
+  );
+
+  margin-inline: auto;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+}
+
+.label {
+  margin: 0 0 8px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* View All */
+
+.more {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 16px;
+
+  color: #111;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.more span {
+  transition: transform 0.2s ease;
+}
+
+.more:hover span {
+  transform: translateX(6px);
+}
+
+/* News List */
+
+.list {
+  border-top: 1px solid #ddd;
+}
+
+.item {
+  display: grid;
+
+  grid-template-columns:
+    120px
+    100px
+    1fr
+    24px;
+
+  align-items: center;
+
+  gap: 24px;
+
+  min-height: 80px;
+
+  border-bottom: 1px solid #ddd;
+
+  color: #111;
+
+  text-decoration: none;
+
+  transition: padding 0.2s ease;
+}
+
+.item:hover {
+  padding-inline: 12px;
+}
+
+/* Date */
+
+.date {
+  color: #666;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+/* Category */
+
+.category {
+  color: #888;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* Title */
+
+.newsTitle {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Arrow */
+
+.arrow {
+  font-size: 1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.item:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 80px;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 24px;
+
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .item {
+    grid-template-columns:
+      100px
+      1fr
+      20px;
+
+    gap: 12px;
+
+    padding-block: 20px;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .newsTitle {
+    font-size: 0.8rem;
+  }
+}

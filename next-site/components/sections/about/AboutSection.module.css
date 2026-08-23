@@ -1,0 +1,141 @@
+.section {
+  padding-block: 120px;
+  /*background: #f7f7f7; */
+}
+
+.container {
+  width: min(
+    calc(100% - 48px),
+    1200px
+  );
+
+  margin-inline: auto;
+}
+
+/* Heading */
+.heading {
+  margin-bottom: 64px;
+}
+
+.label {
+  margin: 0 0 8px;
+
+  color: #2f80d0;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Content */
+
+.content {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+/* Image */
+
+.image {
+  position: relative;
+
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+}
+
+.image img {
+  object-fit: cover;
+}
+
+/* Body */
+.body {
+  max-width: 480px;
+}
+
+.catchcopy {
+  margin: 0 0 32px;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.description {
+  margin: 0 0 20px;
+
+  color: #666;
+
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+/* Link */
+.link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+  color: #111;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+
+  transition: gap 0.2s ease;
+}
+
+.link:hover {
+  gap: 22px;
+}
+
+/* style for cell phone */
+@media (max-width: 768px) {
+  .section {
+    padding-block: 80px;
+  }
+
+  .container {
+    width: min(
+      calc(100% - 32px),
+      1200px
+    );
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .body {
+    max-width: none;
+  }
+
+  .catchcopy {
+    font-size: 1.5rem;
+  }
+}

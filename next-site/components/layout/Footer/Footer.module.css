@@ -1,0 +1,195 @@
+.footer {
+  background: #111;
+  color: #fff;
+}
+
+.container {
+  width: min(
+    calc(100% - 48px),
+    1200px
+  );
+
+  margin-inline: auto;
+}
+
+/* Main */
+
+.main {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr;
+
+  gap: 80px;
+
+  padding-block: 96px;
+}
+
+/* Company */
+
+.company {
+  min-width: 0;
+}
+
+.logo {
+  display: inline-block;
+
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.description {
+  margin: 8px 0 32px;
+
+  color: #888;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+.companyText {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+/* Heading */
+
+.heading {
+  margin: 0 0 24px;
+
+  color: #777;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+/* Navigation */
+
+.navigation {
+  min-width: 0;
+}
+
+/* Contact */
+
+.contact {
+  min-width: 0;
+}
+
+.contactText {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.contactLink {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-top: 28px;
+
+  color: #fff;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+  text-decoration: none;
+
+  transition: gap 0.2s ease;
+}
+
+.contactLink:hover {
+  gap: 24px;
+}
+
+/* Bottom */
+
+.bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 24px;
+
+  border-top: 1px solid #2a2a2a;
+}
+
+.copyright,
+.privacy {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+}
+
+.privacy {
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.privacy:hover {
+  color: #fff;
+}
+
+.companyText {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.socialLinks {
+  margin-top: 28px;
+}
+
+/* style for cell phone */
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+
+    padding-block: 64px;
+  }
+
+  .companyText {
+    margin-top: 24px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding-block: 20px;
+  }
+}
