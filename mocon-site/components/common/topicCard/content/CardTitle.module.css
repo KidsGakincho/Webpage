@@ -1,0 +1,17 @@
+.cardTitle {
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.default {
+  font-size: 14px;
+}
+
+.featured {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}

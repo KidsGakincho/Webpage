@@ -1,0 +1,127 @@
+.hero {
+  padding-block: 80px 120px;
+  background: #fff;
+}
+
+.content {
+  max-width: 620px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: clamp(38px, 4.5vw, 64px);
+  line-height: 1.35;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #111;
+}
+
+.wakuwaku {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.description {
+  margin: 32px 0 0;
+  max-width: 480px;
+  color: #111;
+  font-size: 1.4rem;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.primaryAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 28px;
+  background: var(--color-pink);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  border-radius: 999px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.primaryAction:hover {
+  transform: translateY(-3px) rotate(-1deg);
+  box-shadow: 4px 6px 0 #111111;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* font color for hero title */
+.colorPink {
+  display: inline-block;  
+  color: var(--color-pink);
+  transform: rotate(-10deg) translateY(-10px);
+}
+
+.colorGreen {
+  display: inline-block;
+  color: var(--color-green);
+  transform: rotate(5deg) translateY(10px);
+}
+
+.colorYellow {
+  display: inline-block;
+  color: var(--color-yellow);
+  transform: rotate(-5deg) translateY(-10px);
+}
+
+.colorBlue {
+  display: inline-block;
+  color: var(--color-blue);
+  transform: rotate(10deg) translateY(10px);
+}
+
+/* style for cell phone */
+@media (max-width: 768px) {
+  .hero {
+    padding-block: 48px 80px;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

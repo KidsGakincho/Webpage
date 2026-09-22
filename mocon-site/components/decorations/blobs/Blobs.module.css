@@ -1,0 +1,31 @@
+.main {
+  position: absolute;
+}
+
+.blobs {
+  position: absolute; /* position (0, 0)*/
+  aspect-ratio: 1/1;
+  width: clamp(180px, 30vw, 320px);
+  opacity: .5;
+  z-index: 1;
+}
+
+.blobTopLeft {
+  top: -50px;
+  left: -50px;
+}
+
+.blobTopRight {
+  top: -30px;
+  right: -40px;
+}
+
+.blobBottomLeft {
+  bottom: -150px;
+  left: -15px;
+}
+
+.blobBottomRight {
+  bottom: -14px;
+  right: -15px;
+}

@@ -1,0 +1,44 @@
+.sectionTitle {
+  margin-bottom: var(--space-lg);
+}
+
+.label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.heading {
+  margin: 0;
+  color: #111;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* Theme colors */
+.pink {
+  color: var(--color-pink);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.title {
+  margin: 0;
+  color: #111;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+}

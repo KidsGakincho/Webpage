@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(
+    calc(100% - 48px),
+    1200px
+  );
+
+  height: 80px;
+  
+  margin-inline: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* style for cell phone */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}

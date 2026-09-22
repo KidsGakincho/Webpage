@@ -1,0 +1,14 @@
+.cardDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.default {
+  font-size: 13px;
+}
+
+.featured {
+  font-size: 20px;
+}

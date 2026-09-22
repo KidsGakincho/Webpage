@@ -1,0 +1,24 @@
+.day {
+  color: #888;
+}
+
+.tag {
+  background: #c9eafe;
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 14px;
+  color: #111;
+  font-size: .8rem;
+  text-decoration: none;  
+  border-radius: 999px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+
+.default {
+  font-size: 12px;
+}
+
+.featured {
+  font-size: 16px;
+}

@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --color-primary: #2f80d0;
+  --color-primary-dark: #2169ad;
+
+  --color-text: #222222;
+  --color-text-light: #666666;
+
+  --color-background: #ffffff;
+  --color-background-subtle: #f6f8fa;
+
+  --color-border: #e5e7eb;
+
+  /* Typography */
+  --font-family:
+    "Noto Sans JP",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+
+  /* Layout */
+  --container-width: 1200px;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Border */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Shadow */
+  --shadow-sm:
+    0 2px 8px rgb(0 0 0 / 8%);
+
+  --shadow-md:
+    0 8px 24px rgb(0 0 0 / 10%);
+}

@@ -1,0 +1,41 @@
+.blob {
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  opacity: .3;
+}
+
+.blobTopRight {
+  top: -80px;
+  right: -60px;
+}
+
+.blobTopLeft {
+  top: -80px;
+  left: -80px;
+}
+
+.blobBottomRight {
+  bottom: -1000px;
+  right: -50px;
+}
+
+.blobBottomRight2 {
+  bottom: -1100px;
+  right: 80px;
+}
+
+.blobBottomLeft {
+  bottom: -1000px;
+  left: -80px;
+}
+
+.blobBottomLeft2 {
+  bottom: -1100px;
+  left: 10px;
+}
+
+.blobBottom {
+  bottom: -1000px;
+  left: 0px;
+}

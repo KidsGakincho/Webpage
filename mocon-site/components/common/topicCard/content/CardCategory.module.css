@@ -1,0 +1,21 @@
+.cardCategory {
+  margin-left: 10px;
+  background: var(--color-pink);
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 14px;
+  color: #fff;
+  font-size: .8rem;
+  text-decoration: none;  
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.default {
+  font-size: .8rem;
+}
+
+.featured {
+  font-size: 1.0rem;
+  margin-right: 15px;
+}

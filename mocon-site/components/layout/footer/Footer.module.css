@@ -1,0 +1,80 @@
+.footer {
+  background: #fff;
+  color: #111;
+}
+
+.container {
+    width: min(
+    calc(100% - 48px),
+    1200px
+  );
+
+  margin-inline: auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 60px;
+  padding-block: 96px;
+  position: relative;
+}
+
+.company {
+  min-width: 0;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navigation {
+  min-width: 0;
+  font-weight: 600;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.copyright,
+
+.companyText {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.socialLinks {
+  margin-top: 28px;
+}
+
+/* style for cell phone */
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-block: 64px;
+  }
+
+  .companyText {
+    margin-top: 24px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-block: 20px;
+  }
+}
