@@ -1,0 +1,12 @@
+.articleSection {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 40px;
+  background: #fff;
+  color: #111;
+}
+
+.container {
+  width: min(calc(100% - 48px), 1200px);
+  margin-inline: auto;
+}

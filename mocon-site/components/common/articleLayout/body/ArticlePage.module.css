@@ -1,0 +1,36 @@
+.main {
+  padding-block: 5px 5px;
+  padding-inline: 5px 60px;
+  color: #111;
+  background: 
+    linear-gradient(to bottom, 
+    #ffffff 0%,
+    #FFFFE0 30%,
+    #fff3bf 50%,
+    #ffd8a8 90%,
+    #ffffff 100%
+  );
+}
+
+.container {
+  width: min(calc(100% - 48px), 1200px);
+  margin-inline: auto;
+}
+  
+.article {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 20px;
+}
+
+.aside {
+  position: sticky;
+  top: 120px;
+  width: 120%;
+}

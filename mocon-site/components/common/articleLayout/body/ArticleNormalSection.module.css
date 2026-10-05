@@ -1,0 +1,40 @@
+.paragraph {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.number {
+  background: var(--color-pink);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.numberWrapper {
+  flex-shrink: 0;
+  width: 56px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contentWrapper {
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.text {
+  margin-top: 10px; 
+}

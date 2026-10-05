@@ -1,0 +1,38 @@
+.articleIndex {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*border: #0f172a solid 1px;*/
+  background-color: #fff;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-weight: 600;
+}
+
+.standardOl {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ol-counter;
+}
+
+.standardOlItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  color: #334155;
+}
+
+.standardOlItem::before {
+  counter-increment: ol-counter;
+  content: counter(ol-counter) ".";
+  font-weight: 600;
+  color: #0f172a;
+  min-width: 28px;
+  flex-shrink: 0;
+}

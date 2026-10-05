@@ -1,0 +1,22 @@
+.section {
+  padding-block: 60px;
+  background: #EEF7FC;
+  position: relative;
+}
+
+.container {
+  width: min(calc(100% - 48px), 1200px);
+  margin-inline: auto;
+  position: relative;
+}
+
+.heading {
+  margin-bottom: 56px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  place-items: center;
+}

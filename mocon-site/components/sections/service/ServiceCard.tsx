@@ -1,30 +1,43 @@
-import Image from "next/image";
 import styles from "./ServiceCard.module.css";
-import { Service } from "@/types/service";
+import { CardImage } from "@/components/common/topicCard/content/CardImage";
+import { CardTitle } from "@/components/common/topicCard/content/CardTitle";
+import { CardDescription } from "@/components/common/topicCard/content/CardDescription";
 
-type ServiceCardProps = {
-  service: Service;
-};
+type Service = {
+  id: string;
+  title: string;
+  description: string;
+  resource: {
+    src: string;
+    alt: string;
+  }
+}
 
-export function ServiceCard({ service, }: ServiceCardProps) {
+export function ServiceCard({ 
+  id,
+  title,
+  description,
+  resource
+}: Service) {
   return (
     <article className={styles.card}>
-      <div className={styles.icon}>
-        <Image
-          src={service.icon}
-          alt=""
-          width={100}
-          height={100}
+      <div className={`${styles.iconCircle} ${styles[`${id}`]}`}>
+        <CardImage
+          src={resource.src}
+          alt={resource.alt}
         />
       </div>
 
-      <h3 className={styles.title}>
-        {service.title}
-      </h3>
+      <CardTitle
+        title={title}
+        variant={"featured"}
+      />
 
-      <p className={styles.description}>
-        {service.description}
-      </p>
+      <CardDescription
+        description={description}
+        variant={"featured"}
+        truncate={false}
+      />
     </article>
   );
 }

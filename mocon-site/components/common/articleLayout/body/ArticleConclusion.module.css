@@ -1,0 +1,26 @@
+.conclusion {
+  margin-top: 30px;
+  background: #fdf0fa;
+  border-radius: 16px;
+  padding: 16px;
+
+  display: grid;
+  grid-template-columns: minmax(70px, 10%) 1fr; 
+  gap: 10px;
+  align-items: center;
+}
+
+.circleIcon {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1 / 1;
+  background-color: #fff;
+  border-radius: 50%;  
+  object-fit: cover;
+  padding: 8px;
+}
+
+.title {
+  color: red;
+  font-weight: 600;
+}

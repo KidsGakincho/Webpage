@@ -1,6 +1,24 @@
-import { BlogList } from "@/types/blogList";
+export type BlogList = {
+  id: string;
+  day: string;
+  category: [
+   "All" | 
+   "Development" | 
+   "Design" | 
+   "Life" | 
+   "Other"
+  ];
+  title: string;
+  description: string;
+  tag: string[];
+  resource: {
+    src: string;
+    alt: string;
+  };
+  slug: string;
+}[];
 
-export const blogList: BlogList[] = [
+export const blogList: BlogList = [
   {
     id: "1",
     day: "2026.08.20",

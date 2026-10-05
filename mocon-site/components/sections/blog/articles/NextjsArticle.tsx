@@ -1,14 +1,11 @@
-import { ArticleHeader } from "@/components/common/articleLayout/ArticleHeader";
-import { ArticleSection } from "@/components/common/articleLayout/ArticleSection";
+import { ArticlePage } from "@/components/common/articleLayout/body/ArticlePage";
+import { ArticleProps } from "@/content/blog/article";
 
-export function NextjsArticle () {
-  return(
-    <article>
-      <ArticleHeader />
-
-      <ArticleSection />
-      
-      ここに記事の画像やソースコード、詳細を入力する
-    </article>
+export function NextjsArticle ({ 
+  article,
+  tags
+ }: ArticleProps) {
+  return (
+    <ArticlePage article={article} tags={tags} />
   );
 }

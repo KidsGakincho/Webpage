@@ -1,3 +1,4 @@
+import { articles } from "@/content/blog/articles";
 import { articleComponents } from "@/content/blog/articleComponents";
 
 type Props = {
@@ -9,10 +10,16 @@ type Props = {
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const Article = articleComponents[slug];
+  const article = articles.find( 
+    (article) => article.slug === slug
+  );
+  const tags = Array.from(
+    new Set(articles.flatMap((article) => article.tags))
+  );
 
-  if (!Article) {
+  if (!Article || !article) {
     return <p>記事が見つかりません。</p>;
   }
 
-  return <Article/>;
+  return <Article article={article} tags={tags} />;
 }

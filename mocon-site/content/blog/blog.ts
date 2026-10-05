@@ -1,6 +1,16 @@
-import {Topics} from "@/types/topics";
+export type Topics = {
+  title: string;
+  tag: string[];
+  date: string;
+  resource: {
+    src: string;
+    alt: string;
+  };
+  href: string;
+  publishedAt: string;
+}[];
 
-export const topics: Topics[] = [
+export const topics: Topics = [
   {
     title: "デザインの力で伝える、ということ",
     date: "2026年  8月20日",

@@ -1,0 +1,30 @@
+.section {
+  padding: 50px 50px;
+  background: #f6f8f6;
+  color: #111;
+  position: relative;
+}
+
+.content {
+  width: min(calc(100% - 48px),1200px);
+  margin-inline: auto;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  justify-content: center;
+  gap: 30px;
+}

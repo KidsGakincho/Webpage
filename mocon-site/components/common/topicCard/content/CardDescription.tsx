@@ -5,15 +5,17 @@ type Variant = "default" | "featured";
 type CardDescriptionProps = {
   description: string;
   variant: Variant; 
+  truncate?: boolean;
 }
 
 export function CardDescription ({
   description,
-  variant = "default"
+  variant = "default",
+  truncate = true,
 }: CardDescriptionProps) {
   return(
-    <span className={`${styles.cardDescription} ${styles[variant]}`}>
+    <p className={`${truncate ? styles.truncate : ""} ${styles[variant]}`}>
       {description}
-    </span>
+    </p>
   );
 }

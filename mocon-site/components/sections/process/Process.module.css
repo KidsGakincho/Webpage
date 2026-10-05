@@ -1,16 +1,44 @@
 .section {
-  padding-block: 90px;
+  padding-block: 40px;
   background: #fffaf5;
   overflow: hidden;
   position: relative;
   color: #111;
 }
 
-.container {
-  width: min(
-    calc(100% - 48px),
-    1200px
-  );
+.title {
+  text-align: center;
+}
 
-  margin-inline: auto;
+.list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  place-items: center;
+}
+
+.card {
+  background: #fffaf5;
+  font-weight: 600;
+}
+
+.step01 {
+  background: #fff5eb;
+}
+
+.step02 {
+  background: #ffebd4;
+}
+
+.step03 {
+  background: #ffdcb3;
+}
+
+.step04 {
+  background: #fca868;
+}
+
+.step05 {
+  background: #8c532b;
 }

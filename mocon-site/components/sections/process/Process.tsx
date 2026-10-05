@@ -1,34 +1,35 @@
-import { Container } from "@/components/common/container/Container";
-import styles from "./Process.module.css";
 import { SectionTitle } from "@/components/common/section/SectionTitle";
 import { process } from "@/content/process";
+import { ProcessCard } from "./ProcessCard";
+import styles from "./Process.module.css";
 
 export function Process() {
   return(
     <section className={styles.section}>
-      <Container className={styles.container}>
+      <div className={styles.title}>
         <SectionTitle
           label="PROCESS"
           title="ものづくりのながれ"
           color="pink"
         />
         
-        <p>
-          ヒアリングから公開後のサポートまで、<br/>
-          一つひとつ丁寧に進めていきます。
-        </p>
+        <span>
+          ヒアリングから公開後のサポートまで、一つひとつ丁寧に進めていきます。
+        </span>
+      </div>
 
-        <div>
-          {process.map((item, index) => (
-          <div key={index}>
-            {index}
-            {item.process}
-            {item.description}
-            {item.image}
+      <div className={styles.list}>
+        {process.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <ProcessCard
+              id={item.id}
+              process={item.process}
+              description={item.description}
+              resource={item.resource}
+            />
           </div>
-          ))} 
+        ))} 
         </div>
-      </Container>
     </section>
   );
 }

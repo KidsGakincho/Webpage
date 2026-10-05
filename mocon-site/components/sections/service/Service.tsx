@@ -1,12 +1,10 @@
-import { getServices } from "@/lib/services";
-import styles from "./ServiceList.module.css";
+import styles from "./Service.module.css";
 import { ServiceCard } from "./ServiceCard";
 import { Container } from "@/components/common/container/Container";
 import { SectionTitle } from "@/components/common/section/SectionTitle";
+import { services } from "@/content/services";
 
 export function ServiceList() {
-  const services = getServices();
-
   return (
     <section className={styles.section}>
       <Container className={styles.container}>
@@ -18,15 +16,18 @@ export function ServiceList() {
           />
         </div>
 
-        <div className={styles.grid}>
-          {services.map((service) => (
+        <div className={styles.list}>
+          {services.map((service, index) => (
             <ServiceCard
-              key={service.id}
-              service={service}
+              key={index}
+              id={service.id}
+              title={service.title}
+              description={service.description}
+              resource={service.resource}
             />
           ))}
         </div>
       </Container>
-  </section>
+    </section>
   );
 }

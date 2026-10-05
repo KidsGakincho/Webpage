@@ -1,4 +1,4 @@
-import { Works } from "@/content/works/works";
+import { works } from "@/content/works/works";
 import { Carousel } from "@/components/common/carousel/Carousel";
 import styles from "./LatestWorks.module.css";
 import { Container } from "@/components/common/container/Container";
@@ -19,7 +19,7 @@ export function LatestWorks() {
         />
     
         <Carousel columns={3} rows={1}>
-          {Works.map((work, index) => (
+          {works.map((work, index) => (
             <WorkCard
               key={index}
               layout={"vertical"}

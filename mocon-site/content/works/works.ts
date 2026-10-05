@@ -7,9 +7,9 @@ export type Works = {
     alt: string;
   };
   slug: string;
-};
+}[];
 
-export const Works: Works[] = [
+export const works: Works = [
   {
     title: "Webサイト",
     description: "mocon コーポレートサイト制作",

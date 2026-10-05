@@ -4,7 +4,7 @@ type Variant = "default" | "featured";
 
 type CardTitleProps = {
   title: string;
-  variant: Variant; 
+  variant: Variant;
 }
 
 export function CardTitle ({

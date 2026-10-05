@@ -1,14 +1,11 @@
-export function DesignArticle () {
-  return(
-    <article>
-      <header>
-        ここに記事タイトルを入力する
-      </header>
+import { ArticlePage } from "@/components/common/articleLayout/body/ArticlePage";
+import { ArticleProps } from "@/content/blog/article";
 
-      <section>
-      
-      </section>
-      ここに記事の画像やソースコード、詳細を入力する
-    </article>
+export function DesignArticle ({ 
+  article,
+  tags
+}: ArticleProps) {
+  return (
+    <ArticlePage article={article} tags={tags} />
   );
 }

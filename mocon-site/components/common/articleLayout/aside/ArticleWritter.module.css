@@ -1,0 +1,24 @@
+.articleWritter {
+  color: #111;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: min(calc(100% - 48px), 1200px);
+  margin-inline: auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;  
+}
+
+.sns {
+  display: inline-flex;
+}
