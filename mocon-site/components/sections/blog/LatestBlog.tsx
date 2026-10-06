@@ -1,8 +1,8 @@
 import { Container } from "@/components/common/container/Container";
 import { SectionHeader } from "@/components/common/section/SectionHeader";
 import styles from "@/components/sections/blog/LatestBlog.module.css";
-import { BlogCard } from "@/components/sections/blog/BlogCard";
 import { getBlogEntries } from "@/lib/blogEntries";
+import { BlogListCard } from "./blogList/BlogListCard";
 
 export function LatestBlog() {
   const topics = getBlogEntries(3);
@@ -20,7 +20,7 @@ export function LatestBlog() {
 
         <div className={styles.entry}>
           {topics.map((topic) => (
-            <BlogCard
+            <BlogListCard
               key={topic.slug}
               layout={"vertical"}
               {...topic}

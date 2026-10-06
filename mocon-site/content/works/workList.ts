@@ -1,6 +1,16 @@
-import { WorkList } from "@/types/workList";
+export type WorkList = {
+  id: string;
+  category: ["Web Site" | "App" | "System"];
+  title: string;
+  description: string;
+  resource: {
+    src: string,
+    alt: string,
+  };
+  slug: string;
+}[];
 
-export const workList: WorkList[] = [
+export const workList: WorkList = [
   {
     id: "1",
     resource: {
