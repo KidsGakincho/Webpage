@@ -1,0 +1,17 @@
+□ npm run build が成功する
+□ npm run lint が成功する
+□ TypeScriptエラーがない
+□ .envをGitHubに入れていない
+□ node_modulesをGitHubに入れていない
+□ .nextをGitHubに入れていない
+□ 画像パスが本番でも正しい
+□ Imageのfill + position問題がない
+□ HeroのLCP対策
+□ レスポンシブ確認
+□ Header / Footer確認
+□ Works Carousel確認
+□ Contact確認
+□ 404ページ確認
+□ metadata設定
+□ favicon設定
+□ OGP設定

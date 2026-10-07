@@ -11,7 +11,7 @@ export function Header() {
           href="/"
           className={styles.logo}
         >
-          〇✕△☆ Company
+          NEXUS Company
         </Link>
 
         <Navigation />

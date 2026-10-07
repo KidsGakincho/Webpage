@@ -13,7 +13,7 @@ export function Footer() {
           {/* 1. Logo / Company */}
           <div className={styles.company}>
             <Link href="/" className={styles.logo}>
-              〇✕△☆ Company
+              NEXUS Company
             </Link>
 
             <p className={styles.description}>
