@@ -5,14 +5,15 @@ import { Container } from "@/components/common/container/Container";
 import { SectionTitle } from "@/components/common/section/SectionTitle";
 import { WorkListCard } from "./WorkListCard";
 import { Carousel } from "@/components/common/carousel/Carousel";
-import styles from "./WorkList.module.css";
 import { useState } from "react";
 import { filterWorks } from "@/lib/filterWorks";
+import styles from "./WorkList.module.css";
+import { Works } from "@/content/works/workList";
 
 export function WorkList() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState<Works[number]['category'][number] | "All">("All");
   const filteredWorks = filterWorks(selectedCategory);
-  const tags = ["All", "Web Site", "App", "System"];
+  const tags = ["All", "Web Site", "App", "System"] as const;
 
   return(
     <section className={styles.workList}>

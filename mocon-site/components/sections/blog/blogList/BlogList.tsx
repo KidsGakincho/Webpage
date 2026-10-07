@@ -3,18 +3,19 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/common/container/Container";
-import styles  from "./BlogList.module.css";
 import { Carousel } from "@/components/common/carousel/Carousel";
 import { SectionTitle } from "@/components/common/section/SectionTitle";
 import { filterBlogs } from "@/lib/filterBlogs";
 import { BlogListCard } from "@/components/sections/blog/blogList/BlogListCard";
 import { getBlogEntries } from "@/lib/blogEntries";
 import { Featured } from "@/components/common/topicCard/layout/Featured";
+import { Article } from "@/content/blog/article";
+import styles  from "./BlogList.module.css";
 
 export function BlogList() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState<Article[number]['category'][number] | "All">("All");
   const filteredBlogs = filterBlogs(selectedCategory);
-  const categories = ["All", "Development", "Design", "Life", "Other"];
+  const categories = ["All", "Development", "Design", "Life", "Other"] as const;
   const latestBlog = getBlogEntries(1);
 
   return(

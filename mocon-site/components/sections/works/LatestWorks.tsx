@@ -2,7 +2,7 @@ import { Carousel } from "@/components/common/carousel/Carousel";
 import styles from "./LatestWorks.module.css";
 import { Container } from "@/components/common/container/Container";
 import { SectionHeader } from "@/components/common/section/SectionHeader";
-import { workList } from "@/content/works/workList";
+import { works } from "@/content/works/workList";
 import { WorkListCard } from "./workList/WorkListCard";
 
 export function LatestWorks() {
@@ -19,7 +19,7 @@ export function LatestWorks() {
         />
     
         <Carousel columns={3} rows={1}>
-          {workList.map((work, index) => (
+          {works.map((work, index) => (
             <WorkListCard
               key={index}
               layout={"vertical"}

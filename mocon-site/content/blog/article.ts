@@ -2,13 +2,7 @@ export type Article = {
   slug: string;
   title: string;
   description: string;
-  category: [
-    "All" | 
-    "Development" | 
-    "Design" | 
-    "Life" | 
-    "Other"
-  ];
+  category: ("All" | "Development" | "Design" | "Life" | "Other")[];
   day: string;
   resource: {
     src: string;
@@ -24,10 +18,10 @@ export type Article = {
     }[];
   }[];
   tags: string[];
-};
+}[];
 
 export type ArticleProps = {
-  article: Article;
+  article: Article[number];
   tags: string[];
 };
 

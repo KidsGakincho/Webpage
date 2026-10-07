@@ -1,9 +1,10 @@
-import { workList } from "@/content/works/workList";
+import { Works } from "@/content/works/workList";
+import { works } from "@/content/works/workList";
 
-export function filterWorks(category: string) {
+export function filterWorks(category: Works[number]['category'][number] | "All") {
   if (category === "All") {
-    return workList;
+    return works;
   }
 
-  return workList.filter((workList) => workList.category.includes(category));
+  return works.filter((work) => work.category.includes(category));
 }

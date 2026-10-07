@@ -1,4 +1,6 @@
-export const articles = [
+import { Article } from "./article";
+
+export const articles: Article = [
   {
     slug: "entry-2026-08-20",
     title: "Next.jsでmoconを作ってみた",

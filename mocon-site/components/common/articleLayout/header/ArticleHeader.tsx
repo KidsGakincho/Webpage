@@ -7,7 +7,7 @@ import { Container } from "../../container/Container";
 
 type ArticleHeaderProps = {
   breadcrumb: BreadcrumbProps["items"];
-  article: Article;
+  article: Article[number];
 };
 
 export function ArticleHeader ({

@@ -1,6 +1,6 @@
-export type WorkList = {
+export type Works = {
   id: string;
-  category: ["Web Site" | "App" | "System"];
+  category: ("Web Site" | "App" | "System")[];
   title: string;
   description: string;
   resource: {
@@ -8,9 +8,15 @@ export type WorkList = {
     alt: string,
   };
   slug: string;
+  tags: string[];
 }[];
 
-export const workList: WorkList = [
+export type WorkProps = {
+  work: Works[number];
+  tags: string[];
+};
+
+export const works: Works = [
   {
     id: "1",
     resource: {
@@ -20,7 +26,8 @@ export const workList: WorkList = [
     title: "mocon コーポレートサイト",
     description: "サービスや想いをわかりやすく伝え、採用やお問い合わせにつながることを目的に制作しました。",
     category: ["Web Site"],
-    slug: "/works/worklist/website/"
+    slug: "/works/worklist/website/",
+    tags: [],
   },
   {
     id: "2",
@@ -32,6 +39,7 @@ export const workList: WorkList = [
     description: "",
     category: ["App"],
     slug: "/works/worklist/website/",
+    tags: [],
   },
   {
     id: "3",
@@ -42,7 +50,8 @@ export const workList: WorkList = [
     title: "まだ決めてない",
     description: "データセットから編集可能な図を表示するアプリを開発する予定。",
     category: ["App"],
-    slug: "/works/worklist/website/"
+    slug: "/works/worklist/website/",
+    tags: [],
   },
   {
     id: "4",
@@ -53,7 +62,8 @@ export const workList: WorkList = [
     title: "Nature コーポレイトサイト",    
     description: "自然の恵みを生かした製品の紹介用ページを作成しました。",
     category: ["Web Site"],  
-    slug: "/works/worklist/website/"
+    slug: "/works/worklist/website/",
+    tags: [],
   },
   {
     id: "5",
@@ -64,7 +74,8 @@ export const workList: WorkList = [
     title: "データプラットフォーム",
     description: "企業のデータ活用を支援するプラットフォームのUI/UXデザイン・開発を担当する予定",
     category: ["Web Site"],
-    slug: "/works/worklist/website/"
+    slug: "/works/worklist/website/",
+    tags: [],
   },
   {
     id: "6",
@@ -75,6 +86,7 @@ export const workList: WorkList = [
     title: "Title",
     description: "Description",
     category: ["Web Site"],
-    slug: "/works/worklist/website/"
+    slug: "/works/worklist/website/",
+    tags: [],
   },
 ];

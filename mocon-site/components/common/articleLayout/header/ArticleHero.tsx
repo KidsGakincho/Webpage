@@ -8,7 +8,7 @@ export function ArticleHero ({
   description,
   category,
   resource,
-}: Article) {
+}: Article[number]) {
   return(
     <section className={styles.articleHero}>
       <div className={styles.hero}>

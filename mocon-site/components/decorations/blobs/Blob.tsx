@@ -1,5 +1,5 @@
 import styles from "./Blob.module.css";
-import { generateBlobPath } from "./blobGenerator";
+import { generateBlobPath } from "../../../lib/blobGenerator";
 
 /*
  seed: variation of shapes

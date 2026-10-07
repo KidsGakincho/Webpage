@@ -37,14 +37,6 @@ export function PageBlobs() {
         />
       </div>
 
-      <div className={`${styles.blobs} ${styles.blobMiddle}`}>
-        <Image   
-          src="/images/blob/blob-leaf.svg"
-          alt=""
-          fill style={{ objectFit: 'contain' }}
-        />
-      </div>
-
       <div className={`${styles.blobs} ${styles.blobCenter}`}>
         <Image   
           src="/images/blob/blob-sky.svg"

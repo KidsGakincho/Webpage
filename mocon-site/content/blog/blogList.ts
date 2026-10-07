@@ -1,13 +1,7 @@
 export type BlogList = {
   id: string;
   day: string;
-  category: [
-   "All" | 
-   "Development" | 
-   "Design" | 
-   "Life" | 
-   "Other"
-  ];
+  category: ("All" | "Development" | "Design" | "Life" | "Other")[];
   title: string;
   description: string;
   tag: string[];
